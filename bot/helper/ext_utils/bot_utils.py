@@ -191,8 +191,8 @@ def get_readable_message():
             msg += f"\n⏳Time: {download.seeding_time()}"
         else:
             msg += f"\nSize: {download.size()}"
-        msg += f"\n⌛ Elapsed: {get_readable_time(time() - download.message.date.timestamp())}"
-        msg += f"\n abort: ❌ /stop_{download.gid()[:8]}\n\n"
+        msg += f"\n⌛Elapsed: {get_readable_time(time() - download.message.date.timestamp())}"
+        msg += f"\n ❌abort: /stop_{download.gid()[:8]}\n\n"
     if len(msg) == 0:
         return None, None
     dl_speed = 0

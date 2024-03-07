@@ -210,7 +210,7 @@ def get_readable_message():
         buttons.ibutton("Prev", "status pre")
         buttons.ibutton(f"{PAGE_NO}/{PAGES}", "status ref")
         buttons.ibutton("Next", "status nex")
-        buttons.ibutton("Owner", "t.me/killerboy098")
+        buttons.ibutton("Owner", "https://t.me/killerboy098")
         button = buttons.build_menu(3)
     msg += f"<b>⛩️ Tasks</b>: {tasks}{bmax_task}"
     msg += f"\n<b>⛩️ Bot uptime</b>: {currentTime}"
